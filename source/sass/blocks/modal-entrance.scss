@@ -1,0 +1,45 @@
+.modal-entrance {
+  display: none;
+  max-width: 1070px;
+  max-height: 700px;
+  border-radius: 0;
+  border: 10px solid $white;
+}
+
+.modal-entrance__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.modal-entrance__photo {
+  display: block;
+  object-fit: cover;
+  min-width: 290px;
+  min-height: 228px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
+    max-height: 680px;
+  }
+}
+
+.modal-entrance__controls {
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  z-index: 1100;
+}
+
+.modal-entrance__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 39px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

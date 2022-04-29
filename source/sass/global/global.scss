@@ -29,6 +29,10 @@ a {
 .content-wrapper {
   margin: 0 auto;
   min-width: 320px;
-  max-width: 1920px;
+  max-width: 1450px;
   padding: 0 15px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 80px;
+  }
 }

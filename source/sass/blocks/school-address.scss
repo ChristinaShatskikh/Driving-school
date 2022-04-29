@@ -1,0 +1,99 @@
+.school-address {
+  position: relative;
+}
+
+.school-address__wrapper {
+  display: flex;
+}
+
+.school-address__text {
+  position: relative;
+  padding-left: 39px;
+  margin: 0;
+
+  line-height: 19px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 15px;
+    width: 14px;
+    height: 19px;
+    background-image: url("../../img/map-marker.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $desktop-width) {
+      left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 24px;
+  }
+}
+
+.school-address__list {
+  display: none;
+  padding: 20px;
+  padding-bottom: 10px;
+  margin: 0;
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: 3px;
+  width: 225px;
+  min-height: 179px;
+  padding: 20px;
+  padding-bottom: 10px;
+
+  list-style: none;
+
+  background-color: $white;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  &--opened {
+    display: block;
+  }
+}
+
+.school-address__item {
+  margin-bottom: 10px;
+}
+
+.school-address__link {
+  line-height: 19px;
+
+  color: $font-color-base;
+
+  &:hover {
+    color: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 2px solid $dark-gray;
+    outline-offset: -2px;
+  }
+}
+
+.school-address__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.school-address__icon {
+  width: 12px;
+  height: 8px;
+}

@@ -1,0 +1,116 @@
+.map {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    width: 1450px;
+    padding: 0 80px;
+  }
+}
+.map__title {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0 15px;
+
+  font-size: 25px;
+  line-height: 32px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+    padding: 0;
+    font-size: 50px;
+    line-height: 65px;
+    text-align: center;
+  }
+}
+
+.map__dropdown-wrapper {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.map__districts {
+  display: none;
+  position: absolute;
+  content: "";
+  top: 113px;
+  left: 15px;
+  width: 225px;
+  min-height: 119px;
+  padding: 20px;
+  padding-bottom: 10px;
+  background-color: $white;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  &--opened {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 170px;
+    left: 80px;
+  }
+}
+
+.map__district {
+  display: block;
+  padding: 0;
+  margin-bottom: 10px;
+
+  font: inherit;
+  line-height: 19px;
+  color: $dark-gray;
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  &:hover {
+    color: $green;
+    line-height: 21px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 2px solid $dark-gray;
+    outline-offset: -2px;
+  }
+
+  &--current {
+    position: relative;
+    padding-left: 39px;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-right: 5px;
+
+    color: $black;
+
+    @media (min-width: $desktop-width) {
+      padding-left: 24px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 15px;
+      width: 14px;
+      height: 19px;
+      background-image: url("../../img/map-marker.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $desktop-width) {
+        left: 0;
+      }
+    }
+  }
+}
+
+.map__iframe {
+  width: 100%;
+  max-width: 1290px;
+  height: 400px;
+}

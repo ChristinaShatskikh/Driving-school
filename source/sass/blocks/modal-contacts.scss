@@ -1,0 +1,9 @@
+.modal-contacts {
+  display: none;
+  max-width: 481px;
+  padding: 60px 20px;
+
+  @media (min-width: $desktop-width) {
+    padding: 70px;
+  }
+}

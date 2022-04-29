@@ -1,0 +1,37 @@
+.page-main__branches {
+  margin-bottom: 26px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 149px;
+  }
+}
+
+.page-main__instructors {
+  margin-bottom: 65px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 150px;
+  }
+}
+
+.page-main__faq {
+  margin-bottom: 80px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 150px;
+  }
+}
+
+.page-main__map {
+  margin: 0 auto;
+
+  margin-bottom: 60px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 150px;
+  }
+}
+
+.page-main__contacts-form {
+  margin-bottom: 40px;
+}

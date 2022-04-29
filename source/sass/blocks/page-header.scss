@@ -1,0 +1,11 @@
+.page-header {
+  background-color: $white;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: $desktop-width) {
+    box-shadow: none;
+    background-image: linear-gradient(180deg, $light-gray 111px, transparent 111px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    min-height: 180px;
+  }
+}

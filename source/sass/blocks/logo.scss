@@ -1,0 +1,13 @@
+.logo {
+  display: block;
+  width: 90px;
+  height: 38px;
+  padding: 8px;
+  padding-bottom: 10px;
+
+  border-left: 1px solid $alto-gray;
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
+}

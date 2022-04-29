@@ -1,0 +1,51 @@
+.site-list {
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  column-gap: 30px;
+  min-width: 320px;
+  padding: 0;
+  margin: 0;
+  order: 0;
+
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 69px;
+    max-width: 1290px;
+    margin: 0 auto;
+  }
+}
+
+.site-list__item {
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.site-list__link {
+  display: block;
+  color: $black;
+
+  &:hover {
+    color: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 2px solid $dark-gray;
+    outline-offset: -2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    // padding-top: 25px;
+    line-height: 19px;
+  }
+}

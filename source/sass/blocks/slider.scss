@@ -1,0 +1,48 @@
+.slider__item {
+  display: none;
+
+  &--current {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+.slider__pagination {
+  margin: 0;
+
+  font-weight: 700;
+  color: $black;
+
+  &--current-slide {
+    font-size: 20px;
+    line-height: 26px;
+
+    color: $red;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 144px;
+  }
+}
+
+.slider__controls {
+  display: none;
+  @media (min-width: $desktop-width) {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.slider__prev-icon {
+  width: 49px;
+  height: 16px;
+  transform: scale(-1, 1);
+}
+
+.slider__next-icon {
+  width: 49px;
+  height: 16px;
+}

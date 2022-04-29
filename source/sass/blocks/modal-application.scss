@@ -1,0 +1,96 @@
+.modal-application {
+  display: none;
+  max-width: 630px;
+  padding: 80px 20px;
+
+  @media (min-width: $desktop-width) {
+    padding: 128px 60px;
+  }
+}
+
+.modal-application__title {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-top: 100px;
+  max-width: 297px;
+
+  font-size: 25px;
+  line-height: 32px;
+  text-align: center;
+
+  color: $black;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 140px;
+
+    font-size: 30px;
+    line-height: 39px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+
+    transform: translateX(-50%);
+    background-color: $green;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../../img/tick.svg");
+    background-size: 50px 50px;
+    border-radius: 50%;
+
+    @media (min-width: $desktop-width) {
+      width: 120px;
+      height: 120px;
+
+      background-size: 59px 59px;
+    }
+  }
+}
+
+.modal-application__text {
+  margin: 0 auto;
+  max-width: 510px;
+
+  text-align: center;
+}
+
+.modal-application__close {
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+
+  border: none;
+  background-color: transparent;
+  z-index: 1100;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 19px;
+    right: 9px;
+    width: 23px;
+    height: 2px;
+
+    background-color: $green;
+    border-radius: 1px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

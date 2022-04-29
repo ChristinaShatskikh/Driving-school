@@ -1,0 +1,128 @@
+.branches {
+  padding-top: 66px;
+  padding-bottom: 40px;
+
+  background-color: $light-gray;
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+    padding-top: 73px;
+  }
+}
+
+.branches__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-size: 25px;
+  line-height: 32px;
+  font-weight: 700;
+
+  color: $black;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+
+    font-size: 50px;
+    line-height: 65px;
+    text-align: center;
+  }
+}
+
+.branches__wrapper {
+  @media (min-width: $desktop-width) {
+    padding: 70px 80px;
+    background-color: $light-gray;
+    border-radius: 10px;
+  }
+}
+
+.branches__menu {
+  padding-top: 40px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 410px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+
+.branches__button {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  color: $black;
+  background-color: $white;
+
+  &--active {
+    color: $white;
+    background-color: $green;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 190px;
+  }
+}
+
+.branches__list-wrapper {
+  padding-top: 20px;
+}
+
+.branches__list {
+  display: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+
+  list-style: none;
+
+  &--current {
+    display: block;
+
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: repeat(4, 260px);
+      column-gap: 30px;
+    }
+  }
+
+
+}
+
+.branches__item {
+  position: relative;
+  padding-top: 50px;
+
+  color: $black;
+  font-weight: 700;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 24px;
+    height: 33px;
+    background-image: url("../../img/map-marker.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 33px;
+  }
+}
+
+.branches__pagination {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

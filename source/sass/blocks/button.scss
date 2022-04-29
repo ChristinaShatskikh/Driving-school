@@ -1,0 +1,14 @@
+.button {
+  display: block;
+  padding: 15px 20px;
+
+  font: inherit;
+  line-height: 19px;
+  font-weight: 700;
+  text-align: center;
+
+  color: $white;
+  background-color: $red;
+  border: none;
+  border-radius: 10px;
+}

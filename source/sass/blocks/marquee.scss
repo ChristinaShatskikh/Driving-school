@@ -1,0 +1,25 @@
+.marquee {
+  width: 100%;
+  height: 64px;
+  padding: 20px 15px;
+  margin: 0 auto;
+
+  overflow: hidden;
+  white-space: nowrap;
+
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: $white;
+  background-color: $dark-gray;
+  animation: marquee 10s linear infinite;
+
+  @media (min-width: $desktop-width) {
+    height: 76px;
+
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
