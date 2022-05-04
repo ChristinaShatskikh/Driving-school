@@ -12,9 +12,8 @@
     position: absolute;
     content: "";
     right: 195px;
-    bottom: 40px;
+    top: 230px;
     width: 290px;
-    min-height: 323px;
     padding: 30px;
     padding-bottom: 10px;
     background-color: $white;
@@ -87,4 +86,5 @@
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position: 98px 50%;
+  cursor: pointer;
 }

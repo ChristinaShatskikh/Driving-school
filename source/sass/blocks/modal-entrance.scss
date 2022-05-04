@@ -4,6 +4,10 @@
   max-height: 700px;
   border-radius: 0;
   border: 10px solid $white;
+
+  &--show {
+    display: block;
+  }
 }
 
 .modal-entrance__list {
@@ -42,4 +46,14 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    & .slider__prev-icon {
+      color: $red;
+    }
+
+    & .slider__next-icon {
+      color: $red;
+    }
+  }
 }

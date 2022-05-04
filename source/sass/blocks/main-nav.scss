@@ -5,12 +5,11 @@
   max-width: 1450px;
   min-height: 538px;
   row-gap: 40px;
-  padding: 0 15px 80px;
+  padding: 0 15px;
 
   &--off {
     grid-template-rows: 68px;
     min-height: 0;
-    padding: 0 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,6 +43,7 @@
   border: none;
   color: $green;
   background-color: transparent;
+  cursor: pointer;
 
   &::before,
   &::after {
@@ -98,7 +98,7 @@
 
 .main-nav__site-list {
   margin: 0;
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
 
   &--off {
     display: none;
@@ -112,7 +112,7 @@
     width: 100%;
     grid-column: 1 / -1;
     background-color: $white;
-    margin-bottom: 0;
+    // margin-bottom: 0;
   }
 }
 

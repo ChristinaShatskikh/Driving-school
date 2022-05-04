@@ -1,19 +1,19 @@
 .contacts {
   order: 2;
+  margin-bottom: 80px;
 
   &--off {
     display: none;
-
-    @media (min-width: $desktop-width) {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      align-items: center;
-      padding: 30px 0;
-    }
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    margin-bottom: 0;
     order: 0;
   }
 }

@@ -47,7 +47,7 @@
     display: flex;
     justify-content: space-between;
     max-width: 1450px;
-    min-height: 768px;
+    min-height: 630px;
     padding: 0 80px;
     margin: 0 auto;
   }
@@ -89,4 +89,36 @@
 
 .faq__item {
   margin-bottom: 20px;
+}
+
+.faq__controls {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: end;
+    max-width: 1450px;
+    padding: 0 80px;
+    margin: 0 auto;
+  }
+}
+
+.faq__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 39px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    & .slider__prev-icon {
+      color: $red;
+    }
+
+    & .slider__next-icon {
+      color: $red;
+    }
+  }
 }

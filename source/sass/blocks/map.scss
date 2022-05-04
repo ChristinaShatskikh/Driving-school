@@ -42,7 +42,7 @@
   box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 
-  &--opened {
+  &.active {
     display: block;
   }
 
@@ -77,6 +77,10 @@
   &:focus {
     outline: 2px solid $dark-gray;
     outline-offset: -2px;
+  }
+
+  &--chosen {
+    display: none;
   }
 
   &--current {

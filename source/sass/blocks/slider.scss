@@ -1,8 +1,24 @@
-.slider__item {
-  display: none;
+.slider {
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    margin: 0 auto;
+    user-select: none;
+    touch-action: pan-y;
+  }
+}
 
-  &--current {
-    display: block;
+.slider__list {
+  @media (max-width: $mobile-width-only) {
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+  }
+}
+
+.slider__item {
+  @media (max-width: $mobile-width-only) {
+  scroll-snap-align: center;
+  width: 290px;
+  margin-right: 15px;
   }
 
   @media (min-width: $desktop-width) {

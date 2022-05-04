@@ -3,6 +3,10 @@
   max-width: 481px;
   padding: 60px 20px;
 
+  &--show {
+    display: block;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 70px;
   }
