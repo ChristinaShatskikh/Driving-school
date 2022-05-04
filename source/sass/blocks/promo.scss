@@ -27,13 +27,13 @@
     bottom: 40px;
     width: 290px;
     height: 158px;
-    background-image: url("../../img/bmw-3series-gray-mobile.png");
+    background-image: url("../img/bmw-3series-gray-mobile.png");
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 10;
 
     @media (min-resolution: 144dpi) {
-      background-image: url("../../img/bmw-3series-gray-mobile@2x.png");
+      background-image: url("../img/bmw-3series-gray-mobile@2x.png");
     }
 
     @media (min-width: $desktop-width) {
@@ -41,10 +41,10 @@
       bottom: 17px;
       width: 646px;
       height: 351px;
-      background-image: url("../../img/bmw-3series-gray.png");
+      background-image: url("../img/bmw-3series-gray.png");
 
       @media (min-resolution: 144dpi) {
-        background-image: url("../../img/bmw-3series-gray@2x.png");
+        background-image: url("../img/bmw-3series-gray@2x.png");
       }
     }
   }
@@ -79,7 +79,7 @@
 
   border-radius: 10px;
   background-color: $green;
-  background-image: url("../../img/phone.svg");
+  background-image: url("../img/phone.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 24px 24px;

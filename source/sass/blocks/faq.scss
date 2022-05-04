@@ -17,13 +17,13 @@
     width: 290px;
     height: 147px;
     transform: translateX(-50%);
-    background-image: url("../../img/volkswagen-jetta-orange-mobile.png");
+    background-image: url("../img/volkswagen-jetta-orange-mobile.png");
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 10;
 
     @media (min-resolution: 144dpi) {
-      background-image: url("../../img/volkswagen-jetta-orange-mobile@2x.png");
+      background-image: url("../img/volkswagen-jetta-orange-mobile@2x.png");
     }
 
     @media (min-width: $desktop-width) {
@@ -33,10 +33,10 @@
       width: 674px;
       height: 340px;
       transform: none;
-      background-image: url("../../img/volkswagen-jetta-orange.png");
+      background-image: url("../img/volkswagen-jetta-orange.png");
 
       @media (min-resolution: 144dpi) {
-        background-image: url("../../img/volkswagen-jetta-orange@2x.png");
+        background-image: url("../img/volkswagen-jetta-orange@2x.png");
       }
     }
   }

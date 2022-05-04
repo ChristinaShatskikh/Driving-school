@@ -17,13 +17,13 @@
     width: 290px;
     height: 115px;
     transform: translateX(-50%);
-    background-image: url("../../img/kia-sportage-white-mobile.png");
+    background-image: url("../img/kia-sportage-white-mobile.png");
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 10;
 
     @media (min-resolution: 144dpi) {
-      background-image: url("../../img/kia-sportage-white-mobile@2x.png");
+      background-image: url("../img/kia-sportage-white-mobile@2x.png");
     }
 
     @media (min-width: $desktop-width) {
@@ -33,10 +33,10 @@
       width: 971px;
       height: 385px;
       transform: none;
-      background-image: url("../../img/kia-sportage-white.png");
+      background-image: url("../img/kia-sportage-white.png");
 
       @media (min-resolution: 144dpi) {
-        background-image: url("../../img/kia-sportage-white@2x.png");
+        background-image: url("../img/kia-sportage-white@2x.png");
       }
     }
   }
@@ -180,7 +180,7 @@
   left: 5px;
   width: 11px;
   height: 8px;
-  background-image: url("../../img/checkbox-tick.svg");
+  background-image: url("../img/checkbox-tick.svg");
   background-size: 11px 8px;
   background-repeat: no-repeat;
 }

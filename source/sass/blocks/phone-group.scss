@@ -28,16 +28,16 @@
     left: 1px;
     width: 18px;
     height: 18px;
-    background-image: url("../../img/phone-icon.svg");
+    background-image: url("../img/phone-icon.svg");
     background-repeat: no-repeat;
 
     @media (min-width: $desktop-width) {
-      background-image: url("../../img/phone-icon-desktop.svg");
+      background-image: url("../img/phone-icon-desktop.svg");
     }
   }
 
   &--footer:first-child::before {
-    background-image: url("../../img/phone-icon.svg");
+    background-image: url("../img/phone-icon.svg");
   }
 
   @media (min-width: $desktop-width) {
