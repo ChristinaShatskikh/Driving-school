@@ -94,7 +94,7 @@ const sprite = () => {
     .pipe(svgstore({
       inlineSvg: true
     }))
-    .pipe(rename("symbols.svg"))
+    .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
 }
 
@@ -190,7 +190,7 @@ exports.default = gulp.series(
   )
 );
 
-// gulp.task("deploy", function() {
-//   return gulp.src("./build/**/*")
-//     .pipe(ghPages());
-// });
+gulp.task("deploy", function() {
+  return gulp.src("./build/**/*")
+    .pipe(ghPages());
+});
