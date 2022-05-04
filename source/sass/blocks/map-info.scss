@@ -76,7 +76,7 @@
   display: block;
   position: relative;
   padding: 0;
-  min-width: 114px;
+  width: 110px;
 
   font: inherit;
   font-weight: 700;
@@ -84,7 +84,7 @@
   color: $dark-gray;
   background-image: url("../../img/entrance-arrow.svg");
   background-repeat: no-repeat;
-  background-size: 16px 16px;
-  background-position: 98px 50%;
+  background-size: 7px 13px;
+  background-position: right center;
   cursor: pointer;
 }

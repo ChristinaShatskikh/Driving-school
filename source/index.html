@@ -188,7 +188,7 @@
             <use xlink:href="img/sprite.svg#arrow"></use>
           </svg>
         </button>
-        <p class="instructors__text instructors__text--hidden">Все инструкторы проходят повышение квалификации по программе «Преподаватель автомобильной школы по обучению практике управления автотранспортным средством»</p>
+        <p class="instructors__text instructors__text-last instructors__text-last--hidden">Все инструкторы проходят повышение квалификации по программе «Преподаватель автомобильной школы по обучению практике управления автотранспортным средством»</p>
       </div>
       <div class="instructors__wrapper instructors__slider slider ">
         <ul class="instructors__list slider__list">
@@ -499,7 +499,7 @@
 
   <section class="modal modal-entrance slider">
     <ul class="modal-entrance__list slider__list">
-      <li class="slider__item slider__item--current">
+      <li class="modal-entance__item">
         <picture>
           <source type="image/webp" srcset="img/entrance.webp 1x, img/entrance@2x.webp 2x">
           <img class="modal-entrance__photo" src="img/entrance.jpg" srcset="img/entrance@2x.jpg 2x" alt="Вход расположен в двухэтажном здании слева">
@@ -508,12 +508,12 @@
     </ul>
     <div class="slider__controls modal-entrance__controls">
       <button class="modal-entrance__button" type="button" aria-label="Предыдущая фотография входа">
-        <svg class="slider__prev-icon" width="49" height="16">
+        <svg class="slider__prev-icon slider__prev-icon--entrance" width="49" height="16">
           <use xlink:href="img/sprite.svg#arrow-forward"></use>
         </svg>
       </button>
       <button class="modal-entrance__button" type="button" aria-label="Следующая фотография входа">
-        <svg class="slider__next-icon" width="49" height="16">
+        <svg class="slider__next-icon slider__next-icon--entrance" width="49" height="16">
           <use xlink:href="img/sprite.svg#arrow-forward"></use>
         </svg>
       </button>
@@ -524,6 +524,7 @@
   <script src="js/menu.min.js"></script>
   <script src="js/school-location.min.js"></script>
   <script src="js/branches.min.js"></script>
+  <script src="js/instructors-block.min.js"></script>
   <script src="js/faq-accordion.min.js"></script>
 </body>
 </html>

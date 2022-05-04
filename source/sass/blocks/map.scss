@@ -25,7 +25,16 @@
 
 .map__dropdown-wrapper {
   display: flex;
+  width: 220px;
+  height: 22px;
   margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+  }
+
 }
 
 .map__districts {
@@ -87,8 +96,6 @@
     position: relative;
     padding-left: 39px;
     margin: 0;
-    margin-bottom: 20px;
-    margin-right: 5px;
 
     color: $black;
 

@@ -53,12 +53,22 @@
 }
 
 .slider__prev-icon {
+  flex-shrink: 0;
   width: 49px;
   height: 16px;
   transform: scale(-1, 1);
+
+  &--entrance {
+    color: $white;
+  }
 }
 
 .slider__next-icon {
+  flex-shrink: 0;
   width: 49px;
   height: 16px;
+
+  &--entrance {
+    color: $white;
+  }
 }
